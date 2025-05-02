@@ -1,0 +1,31 @@
+footer {
+    position: relative;
+    z-index: 50; /* Ensures footer is above particles */
+  }
+  
+  @keyframes moveX {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-moveX {
+    animation: moveX 2s linear infinite;
+  }
+  @keyframes slideEffort {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .animate-slide {
+    animation: slideEffort 1s infinite ease-in-out;
+  }
+  
+  

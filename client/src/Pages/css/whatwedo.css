@@ -1,0 +1,130 @@
+.whatwedo-section {
+  background-color: #F4f3fb;
+  padding: 60px 0;
+  height: auto !important;
+}
+
+/* New wrapper for falling text */
+.falling-text-wrapper {
+  padding: 40px 0;
+}
+
+/* Falling Text Animation */
+.falling-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.display-3, .display-4 {
+  font-size: 4.3em !important;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .display-3, .display-4 {
+    font-size: 3em !important;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .display-3, .display-4 {
+    font-size: 2.8em !important;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+  .display-3, .display-4 {
+    font-size: 2.5em !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .display-3, .display-4 {
+    font-size: 2.3em !important;
+  }
+}
+
+/* Remove underline from links */
+.falling-text-link {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+  padding: 0.5em 1em; /* Use em units for responsive padding */
+}
+
+.falling-box {
+  color: black;
+  padding: 0; /* Padding moved to the link element */
+  border-radius: 2em; /* Use em units for responsive rounding */
+  margin: 0.3em; /* Use em units for responsive margins */
+  font-size: clamp(0.9rem, 2vw, 1.02rem); /* Responsive font size with limits */
+  font-weight: 600;
+  font-family: var(--fontfamily3);
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  min-width: 0; /* Allows text to shrink properly */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.what-we-do-p {
+  background-color: red;
+  font-size: 14px !important;
+  color: white !important;
+  padding: 5px 20px;
+  display: inline-block;
+  font-family: var(--fontfamily3) !important;
+}
+
+/* Responsive Image */
+.whatwedo-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media queries with proportional scaling */
+@media (max-width: 992px) {
+  .falling-text-container {
+    gap: 12px;
+  }
+  
+  .falling-text-link {
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .falling-text-container {
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .falling-text-link {
+    padding: 0.3em 0.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .falling-text-container {
+    gap: 8px;
+    padding: 0 15px;
+  }
+  
+  .falling-box {
+    white-space: normal; /* Allow text to wrap on smallest screens */
+  }
+  
+  .falling-text-link {
+    padding: 0.2em 0.4em;
+  }
+}
