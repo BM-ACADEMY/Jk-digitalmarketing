@@ -53,14 +53,26 @@ export default function Footer() {
             </div>
 
             {/* Useful Links */}
-            <div>
-              <ul className="space-y-2 text-left">
-                <h3 className="text-3xl font-semibold text-left uppercase mb-4">Useful Links</h3>
-                <li><a href="/#home" className="text-white text-md no-underline">Home</a></li>
-                <li><a href="/services" className="text-white text-md no-underline">Services</a></li>
-                <li><a href="/equiry" className="text-white text-md no-underline">Equiry</a></li>
-              </ul>
-            </div>
+<div>
+  <ul className="space-y-2 text-left">
+    <h3 className="text-3xl font-semibold text-left uppercase mb-4">Useful Links</h3>
+    <li>
+      <Link to="/" className="text-white text-md no-underline hover:text-purple-300 transition-colors">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="/services" className="text-white text-md no-underline hover:text-purple-300 transition-colors">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/enquiry" className="text-white text-md no-underline hover:text-purple-300 transition-colors">
+        Enquiry
+      </Link>
+    </li>
+  </ul>
+</div>
 
             {/* Our Works - Services */}
             <div>
