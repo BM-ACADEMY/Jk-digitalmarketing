@@ -59,7 +59,7 @@ const ContactForm = () => {
       // Simulate network delay for demo
       await new Promise(resolve => setTimeout(resolve, 1500));
   
-      const response = await fetch('https://jk-dm-server.onrender.com/send-email', {
+      const response = await fetch('https://digitok.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
