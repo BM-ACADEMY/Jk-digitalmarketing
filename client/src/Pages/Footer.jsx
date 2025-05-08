@@ -130,15 +130,15 @@ export default function Footer() {
 
     {/* Social Media Links */}
     <li className="flex space-x-5 mt-2">
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/digitok_media" target="_blank" rel="noopener noreferrer">
         <img src="img/instagram.png" alt="Instagram" className="h-8" />
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      {/* <a href="#" target="_blank" rel="noopener noreferrer">
         <img src="img/youtube.png" alt="Youtube" className="h-8" />
       </a>
       <a href="#" target="_blank" rel="noopener noreferrer">
         <img src="img/facebook.png" alt="Facebook" className="h-8" />
-      </a>
+      </a> */}
     </li>
   </ul>
 </div>
