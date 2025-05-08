@@ -74,8 +74,7 @@ const getUserEmailTemplate = (fullName, message) => `
       <p>If you need immediate assistance, please contact us at <a href="mailto:collab@digitokmedia.com" style="color: #007bff;">collab@digitokmedia.com</a></p>
 
       <!-- Footer Section -->
-      <hr>
-      <p style="text-align: center; font-size: 14px; color: #777;">📍 Digitok | <a href="" style="color: #007bff;">www.websitename.com</a></p>
+  
     </div>
   </div>
 `;

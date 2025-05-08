@@ -57,14 +57,6 @@ import websiteDevelopmentVideo from "/img/WEBSITE CREATION1.mp4";
 
 // Icon mapping
 const serviceIcons = {
-  // // Category icons
-  // graphicDesign: <MdDesignServices />,
-  // videoEditing: <GiVideoCamera />,
-  // vrVideos: <Md360 />,
-  // digitalMarketing: <GiCommercialBoat />,
-  // websiteDevelopment: <FaLaptopCode />,
-
-  // Specific service item icons
   "Logo Design": <FaPenNib />,
   "Brand Identity & Style Guide": <FaPaintBrush />,
   "Business Card Design": <MdBusiness />,
@@ -258,7 +250,7 @@ const Servicesection = () => {
       id: "websiteDevelopment",
       title: "Website Development",
       tagline:
-        "We don’t just create websites; we craft digital masterpieces that function around the clock for your brand ",
+        "We don't just create websites; we craft digital masterpieces that function around the clock for your brand ",
       image: websiteDevelopment,
       video: websiteDevelopmentVideo,
       description:
@@ -275,36 +267,33 @@ const Servicesection = () => {
 
   return (
     <div className="service-section" id="services">
-   <h2
+     <h2
   className="container text-uppercase service-top-heading text-center pt-40 fs-1"
   data-aos="zoom-in"
 >
   Explore &nbsp;our &nbsp;services
 </h2>
-<h4
-  className="container service-sub-heading text-center"
-  data-aos="zoom-in"
->
-  Discover how our services can<br />enhance your business
-</h4>
+      <h4
+        className="container service-sub-heading text-center"
+        data-aos="zoom-in"
+      >
+        Discover how our services can<br />enhance your business
+      </h4>
 
-
-<div className="text-center mt-4 mb-20" data-aos="fade-up">
-  <a
-    href="https://wa.me/916381035430"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="no-underline glow-button text-white font-bold py-3 px-6  inline-block transition-all duration-300 hover:scale-105"
-    style={{
-      background: 'linear-gradient(90deg, #a0499c 0%, #c366ab 100%)',
-      boxShadow: '0 0 12px rgba(161, 140, 209, 0.5)' // soft glow
-    }}
-  >
-    SPEAK WITH OUR EXPERTS <span className="ml-2">→</span>
-  </a>
-</div>
-
-
+      <div className="text-center mt-4 mb-20" data-aos="fade-up">
+        <a
+          href="https://wa.me/916381035430"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline glow-button text-white font-bold py-3 px-6  inline-block transition-all duration-300 hover:scale-105"
+          style={{
+            background: 'linear-gradient(90deg, #a0499c 0%, #c366ab 100%)',
+            boxShadow: '0 0 12px rgba(161, 140, 209, 0.5)'
+          }}
+        >
+          SPEAK WITH OUR EXPERTS <span className="ml-2">→</span>
+        </a>
+      </div>
 
       <div className="">
         {services.map((service, index) => (

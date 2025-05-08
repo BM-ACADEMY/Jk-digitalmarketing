@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Commissioner:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .service-section {
   background: white;
   padding-bottom: 4rem;
@@ -6,7 +7,7 @@
 }
 
 .service-container {
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding: 2rem;
   position: relative;
 }
@@ -14,7 +15,7 @@
 .service-content-wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
 }
@@ -39,6 +40,8 @@
 .media-container {
   flex: 1 1 45%;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-container {
@@ -51,7 +54,7 @@
   font-size: clamp(1.75rem, 5vw, 3.3rem);
   font-weight: 800;
   text-align: start;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -61,13 +64,12 @@
   gap: 0.4rem;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
-  color: #6b7280; /* or any color that matches your design */
+  margin-bottom: 1.5rem;
+  color: #6b7280;
   font-family: var(--fontfamily3);
   border-radius: 8px;
   animation: popIn 0.8s ease-out both;
 }
-
 
 .title-gradient {
   background: linear-gradient(90deg, #994a9c, #c04499c0);
@@ -79,7 +81,7 @@
 /* Image and Video Container Styles */
 .full-width-image {
   width: 100%;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
@@ -110,7 +112,7 @@
 /* Content Card Styles */
 .content-card {
   border-radius: 12px;
-  padding: 2rem;
+  padding: 0;
   margin-bottom: 2rem;
   transition: box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
@@ -173,6 +175,50 @@
   font-weight: 500;
 }
 
+/* Base Styles */
+.service-top-heading {
+  color: #c04499;
+  font-weight: 800 !important;
+  font-size: 4rem !important;
+  text-shadow: 2px 2px 6px #8c4b9e;
+}
+
+.service-sub-heading {
+ color: #404b5d;
+  font-weight: 800 !important;
+
+  font-size: 3rem !important;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ 
+}
+
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px rgba(86, 38, 127, 0.9),
+              0 0 30px rgba(86, 38, 127, 0.5);
+  transform: scale(1.05);
+}
+
+/* Animations */
+/* @keyframes glow-pulse {
+  from { text-shadow: 0 0 5px rgba(190, 69, 153, 0.3); }
+  to { text-shadow: 0 0 20px rgba(190, 69, 153, 0.6); }
+} */
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px rgba(86, 38, 127, 0.7); }
+  70% { box-shadow: 0 0 20px rgba(86, 38, 127, 0.9); }
+  100% { box-shadow: 0 0 10px rgba(86, 38, 127, 0.7); }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .service-container {
@@ -212,125 +258,13 @@
     height: 30px;
     font-size: 1rem;
   }
-}
 
-/* Enhancements for better mobile experience */
-@media (hover: none) {
-  .service-item:hover {
-    background-color: transparent;
-    transform: none;
-  }
-  
-  .service-item:hover .service-icon {
-    background-color: #f3e8ff;
-    color: #550fb8;
-    transform: none;
-  }
-  
-  .full-width-image:hover {
-    transform: none;
-  }
-  
-  .hover-zoom:hover {
-    transform: none;
-  }
-}
-/* Base Styles */
-.service-top-heading {
-  background: linear-gradient(90deg, #844c9e, #be4599);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-weight: 800 !important;
-  color: transparent;
-  font-size: 4rem !important;
-  animation: glow-pulse 2s infinite alternate;
-}
-
-.service-sub-heading {
-  background: linear-gradient(90deg, #844c9e, #be4599);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-weight: 800 !important;
-  color: transparent;
-  font-size: 3rem !important;
-  line-height: 1.3;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  animation: glow-pulse 2s infinite alternate;
-}
-
-.service-sub-heading span {
-  display: block;
-}
-
-.service-sub-heading span:nth-child(2) {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-}
-
-.glow-button {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.glow-button:hover {
-  box-shadow: 0 0 20px rgba(86, 38, 127, 0.9),
-              0 0 30px rgba(86, 38, 127, 0.5);
-  transform: scale(1.05);
-}
-
-/* Animations */
-@keyframes glow-pulse {
-  from { text-shadow: 0 0 5px rgba(190, 69, 153, 0.3); }
-  to { text-shadow: 0 0 20px rgba(190, 69, 153, 0.6); }
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 10px rgba(86, 38, 127, 0.7); }
-  70% { box-shadow: 0 0 20px rgba(86, 38, 127, 0.9); }
-  100% { box-shadow: 0 0 10px rgba(86, 38, 127, 0.7); }
-}
-
-.glow-button.pulse {
-  animation: pulse 2s infinite;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-  .service-top-heading {
-    font-size: 3.5rem !important;
-  }
-  .service-sub-heading {
-    font-size: 2.75rem !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .service-top-heading {
-    font-size: 3rem !important;
-  }
-  .service-sub-heading {
-    font-size: 2.5rem !important;
-  }
-}
-
-@media (max-width: 768px) {
   .service-top-heading {
     font-size: 2.5rem !important;
-    animation: none; /* Disable animation on mobile if needed */
-    text-shadow: 0 0 10px rgba(190, 69, 153, 0.4); /* Static glow */
   }
+  
   .service-sub-heading {
     font-size: 2rem !important;
-    margin-top: 1.25rem;
-    margin-bottom: 1.5rem;
-    animation: none;
-    text-shadow: 0 0 8px rgba(190, 69, 153, 0.4);
-  }
-  .glow-button {
-    padding: 10px 20px; /* Smaller button on mobile */
   }
 }
 
@@ -339,10 +273,12 @@
     font-size: 2rem !important;
     line-height: 1.2;
   }
+  
   .service-sub-heading {
     font-size: 1.75rem !important;
   }
+  
   .glow-button:hover {
-    transform: none; /* Disable scale on small devices */
+    transform: none;
   }
 }
