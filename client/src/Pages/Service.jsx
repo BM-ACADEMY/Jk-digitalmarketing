@@ -268,7 +268,7 @@ const Servicesection = () => {
   return (
     <div className="service-section" id="services">
      <h2
-  className="container text-uppercase service-top-heading text-center pt-40 fs-1"
+  className="container text-uppercase service-top-heading text-center pt-52 fs-1"
   data-aos="zoom-in"
 >
   Explore &nbsp;our &nbsp;services
@@ -333,10 +333,10 @@ const Servicesection = () => {
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <h1 className="section-title">
+                  <h1 className="section-title text-center">
                     <span className="title-gradient">{service.title}</span>
                   </h1>
-                  <h2 className="tagline-text">
+                  <h2 className="tagline-text text-center">
                     &ldquo;&nbsp;
                     {service.tagline} &rdquo;
                   </h2>
