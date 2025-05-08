@@ -67,7 +67,7 @@ export default function Footer() {
       </Link>
     </li>
     <li>
-      <Link to="/enquiry" className="text-white text-md no-underline hover:text-purple-300 transition-colors">
+      <Link to="/equiry" className="text-white text-md no-underline hover:text-purple-300 transition-colors">
         Enquiry
       </Link>
     </li>
