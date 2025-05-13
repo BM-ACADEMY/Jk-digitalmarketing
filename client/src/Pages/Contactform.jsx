@@ -186,20 +186,21 @@ const ContactForm = () => {
         <AnimatePresence mode='wait'>
           {isSubmitted ? (
             <motion.div
-              key="success"
-              className="success-message"
-              variants={successVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-            >
-              <div className="success-icon">
-                <BiCheck />
-              </div>
-              <h3>Thank You!</h3>
-              <p>Your message has been sent successfully.</p>
-              <p>We'll get back to you soon.</p>
-            </motion.div>
+            key="success"
+            className="success-message"
+            variants={successVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <div className="success-icon">
+              <BiCheck />
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully.</p>
+            <p>We'll get back to you soon.</p>
+            <p>Please check your inbox or spam folder for our response.</p>
+          </motion.div>
           ) : (
             <motion.div
               key="form"
